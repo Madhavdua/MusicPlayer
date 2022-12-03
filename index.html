@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player </title>
+    <link rel="shortcut icon" href="images/MDLogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="song-no name" id="song-no">
+            Playing
+        </div>
+        <div class="photo">
+            <img id="photo" src="" alt="error" width="auto">
+        </div>
+        <div class="track-name" id="track-name">
+            NightChanges
+        </div>
+    </main>
+    
+    <div class="bottom flex-center absolute-center">
+        <div class="timer">
+            <input type="range" id="progress-bar" min="0" max="1000" value="0.00"> 
+        </div>
+        <div class="controls">
+
+            <div class="play-button" ><button onclick="prev()" type="button"><img src="images/prev.png" alt="error" width="50px"></button></div>
+
+            <div class="play-button" id="control-play" onclick="play()">
+                <button type="button"><img src="images/play.jpg" alt="error" width="50px"></button>
+            </div>
+            <div class="play-button hide" id="control-pause" onclick="pause()">
+                <button type="button"><img src="images/pause.jpg" alt="error" width="50px"></button>
+            </div>
+
+
+            <div class="play-button" ><button onclick="next()" type="button"><img src="images/next.png" alt="error" width="50px"></button></div>
+            <audio src="audio/Night-Changes.mp3"></audio>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/songs.js"></script>
+
+
+
+</body>
+
+</html>

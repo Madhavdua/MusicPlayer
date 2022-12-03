@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Solway&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.absolute-center{
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hide{
+    display: none;
+}
+main{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.song-no{
+    margin-bottom: 20px;
+}
+#photo{
+    border-radius: 15px;
+    border: 2px solid black;
+    max-width: 350px;
+}
+.track-name{
+    margin-top: 30px;
+    text-align: center;
+font-size: 25px;
+font-family: 'Solway', serif;
+}
+.controls{
+    display: flex;
+}
+.play-button > button{
+    border-radius: 50%;
+    border: 2px white;
+    margin: auto 10px;
+}
+.play-button>  button> img{
+border-radius: 50%
+}
+.name{
+align-self: center;
+text-align: center;
+font-size: 15px;
+font-family: 'Solway', serif;
+}
+
+.bottom{
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 2px;
+    width: max-content;
+    width: 80%;
+    
+    display: flex;  
+    border-radius: 15px;
+    flex-direction: column; 
+    box-sizing: border-box;
+}
+@media screen and (max-width:500px) {
+    #photo{
+        width: 150px;
+    }
+    .play-button >button > img{
+        width: 30px;
+    }
+}
